@@ -452,3 +452,6 @@ if(AuthDetails.bot_token){
 } else {
 	console.log("Logging in with user credentials is no longer supported!\nYou can use token based log in with a user account, see\nhttps://discord.js.org/#/docs/main/master/general/updating");
 }
+
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
